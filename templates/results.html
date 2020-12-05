@@ -6,18 +6,18 @@
         TODO: Replace the hard-coded city and date below with data from the 
         server 
     #}
-    <h1>Weather in San Francisco</h1>
-    <p>on Saturday, August 29, 2020</p>
+    <h1>Weather in {{ city }}</h1>
+    <p>on {{ date }}</p>
     
     {#
         TODO: Add the temperature, description, humidity, wind speed, sunrise,
         & sunset below. Replace 'F' with the appropriate units.
     #}
     <ul>
-        <li>Temperature: ° F</li>
-        <li>Description: </li>
-        <li>Humidity: %</li>
-        <li>Wind speed:  miles/hour</li>
+        <li>Temperature: {{ temp}}°</li>
+        <li>Description: {{ description }}</li>
+        <li>Humidity: {{ humidity }}%</li>
+        <li>Wind speed:  {{ wind_speed }}miles/hour</li>
         <li>Sunrise: </li>
         <li>Sunset: </li>
     </ul>
